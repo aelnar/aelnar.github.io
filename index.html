@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>allyza_elnar.html</title>
+<title>allyza_elnar</title>
 <style>
 
 body {
-  background-color: #171717;
-  font-family: monospace;
-  color: white;
+  background-color: #e8e8e8;
+  font-family: helvetica;
+  color: #1c1b1b;
   margin-top: 50px;
   margin-left: 250px;
   margin-right: 250px;
@@ -15,98 +15,163 @@ body {
 }
 
 h1 {
-  font-family: monospace;
-  color: #ff0000;
+  font-family: helvetica;
+  font-size: 70px;
+  color: #1c1b1b;
+}
+
+h1.border {
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin-bottom: 2px;
 }
 
 h2 {
-  font-family: monospace;
-  color: #ff675c;
+  font-family: helvetica;
+  color: #1c1b1b;
 }
+
+h2.border {
+  border-top: 3px solid black;
+  background-color: #b5b2b0;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 
 p {
-  padding: 10px;
-  font-family: monospace;
-  color: white;
+  padding: 3px;
+  font-family: helvetica;
+  color: black;
 }
 
-/* basis for flex containers:
-* https://coder-coder.com/display-divs-side-by-side/
-*/
+p.boxed {
+  border: 3px solid black;
+}
+
+p.bottom {
+  border-bottom: 2px solid black;
+}
+
+p.divider {
+  border-top: 3px solid black;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+p.divider-inside {
+  border-top: 2px solid black;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/* basis for flex containers: https://coder-coder.com/display-divs-side-by-side/ */
 
 .flex-container {
     display: flex;
-    margin: auto;
 }
 
-.flex-child {
-    flex: 1;
-    padding: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+.flex-child-left {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 10px;
+    width: 150px;
+
+}
+
+.flex-child-middle {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 10px;
+    width: 800px;
+}
+
+.flex-child-right {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding:10px;
+    width: 50px;
+
 }
 
 a {
-  color: #ff5447;
+  color: #2b2b2b;
 }
 
 a:hover {
-  color: #ff6e63;
+  color: #5c5a59;
 }
 
 b {
-  color: #ff5447;
+  color: #2b2b2b;
 }
 
 i {
-  color: #ff5447;
-}
-
-u {
-  color: #ff5447;
+  color: #2b2b2b;
 }
 
 </style>
-<script src=""></script>
 <body>
 
-<h1>hello, world!</h1>
+<h1 class="border">Allyza Elnar</h1>
 
-<h2>about.</h2>
+<p>Hi, I'm Allyza! I'm a Neopets petpage editor as a kid turned aspiring software developer as an adult
+  who's interested in both front- and back-end work. Programming is all about problem-solving and
+  being creative for me, and I enjoy every second of it. :) When I'm not sitting in front of my computer,
+  I'm perfecting baking bread, replaying Persona games, or catching up on the latest KPop news.</p>
+
+<h2 class="border">Projects</h2>
 <div class="flex-container">
-
-  <div class="flex-child">
-    My name is Allyza Elnar, and I've been programming since I was a little kid!
-    It started on Neopets when I would make fonts for the message boards and edit my neopets' pages to host my fonts, their stories, and an extended about me.
-    That passion extended into my teen years when I would edit people's theme templates on Tumblr to customize my own blog, as well as enrolling in my high
-    school's computer science classes. In college, I majored in Computer Science at UC Santa Cruz where I found a love for teaching people how to code,
-    learning about artificial intelligence, and the art of visualizing data. My hope for the future is to continue programming and building bigger and better
-    things with code.
+  <div class="flex-child-left">
+    <b><a href="https://github.com/aelnar/p3p-fusion-path">P3P Fusion Path Finder</a></b>
   </div>
 
-  <div class="flex-child">
-    <img src="img1.JPG" width="500" height="300">
+  <div class="flex-child-middle">
+    This project takes the fusion game mechanic from Persona 3 Portable and tries to find a fusion path between
+    two Personas using a graph data structure + graph search.
+    <p class="divider-inside"></p> Started Dec 2022. <p class="divider-inside"></p> Finished with the Python prototype
+    of it and tested it, now working on a website version that will be linked here (hopefully)! For now, the link leads
+    to the GitHub Repo.
   </div>
 
+  <div class="flex-child-right">
+    <b style="font-size: 30px">10%</b>
+  </div>
 </div>
 
-
-<h2>projects.</h2>
+<h2 class="border">Links</h2>
 <div class="flex-container">
-
-  <div class="flex-child">
-    <b><a href="https://github.com/aelnar">git repos.</a></b>
-    Git profile with all my public repos!
+  <div class="flex-child-left">
+    <b><a href="https://github.com/aelnar">GitHub Profile</a></b>
   </div>
 
-  <div class="flex-child">
-    <b><a href="https://github.com/aelnar/p3p-fusion-path">p3p-fusion-path.</a></b>
-    An ongoing project about finding fusion paths for personas in Persona 3 Portable.
+  <div class="flex-child-middle">
+    Takes you to front page of my GitHub repos.
   </div>
 
+  <div class="flex-child-right">
+    <b style="font-size: 30px">10%</b>
+  </div>
+</div>
 
+<p class="divider"></p>
+
+<div class="flex-container">
+  <div class="flex-child-left">
+    <b><a href="https://www.linkedin.com/in/allyza-elnar-107702261/">LinkedIn</a></b>
+  </div>
+
+  <div class="flex-child-middle">
+    Takes you to my LinkedIn profile.
+  </div>
+
+  <div class="flex-child-right">
+    <b style="font-size: 30px">10%</b>
+  </div>
 </div>
 
 </body>
