@@ -67,37 +67,6 @@ p.divider-inside {
   margin-bottom: 2px;
 }
 
-/* basis for flex containers: https://coder-coder.com/display-divs-side-by-side/ */
-
-.flex-container {
-    display: flex;
-}
-
-.flex-child-left {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding: 10px;
-    width: 150px;
-
-}
-
-.flex-child-middle {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    margin-left: 2px;
-    padding: 10px;
-    width: 800px;
-}
-
-.flex-child-right {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding:10px;
-    width: 50px;
-
-}
-
 a {
   color: #2b2b2b;
 }
@@ -119,60 +88,59 @@ i {
 
 <h1 class="border">Allyza Elnar</h1>
 
-<p><b>Serving size: </b> Hi, I'm Allyza! I'm a Neopets petpage editor as a kid turned aspiring software developer as an adult
+<p>Hi, I'm Allyza! I'm a Neopets petpage editor as a kid turned aspiring software developer as an adult
   who's interested in both front- and back-end work. Programming is all about problem-solving and
   being creative for me, and I enjoy every second of it. :) When I'm not sitting in front of my computer,
   I'm perfecting baking bread, replaying Persona games, or catching up on the latest KPop news.</p>
 
 <h2 class="border">Projects</h2>
-<div class="flex-container">
-  <div class="flex-child-left">
-    <b><a href="https://github.com/aelnar/p3p-fusion-path">P3P Fusion Path Finder</a></b>
-  </div>
 
-  <div class="flex-child-middle">
-    This project takes the fusion game mechanic from Persona 3 Portable and tries to find a fusion path between
-    two Personas using a graph data structure + graph search. <i>3g</i>
-    <p class="divider-inside"></p> Started Dec 2022. <i>12g</i><p class="divider-inside"></p> Finished with the Python prototype
-    of it and tested it, now working on a website version that will be linked here (hopefully)! For now, the link leads
-    to the GitHub Repo. <i>50g</i>
-  </div>
-
-  <div class="flex-child-right">
-    <b style="font-size: 30px">10%</b>
-  </div>
-</div>
+<table style="width: 100%;">
+<tr>
+<td style="font-size: 16px; width: 15%;"><b><a href="https://github.com/aelnar/p3p-fusion-path">P3P Fusion Path Finder</a></b></td>
+<td style="width: 70%;">
+This project takes the fusion game mechanic from Persona 3 Portable and tries to find a fusion path between
+two Personas using a graph data structure + graph search.
+<p class="divider-inside"></p> Started Dec 2022.<p class="divider-inside"></p> Finished with the Python prototype
+of it and tested it, now working on a website version that will be linked here (hopefully)! For now, the link leads
+to the GitHub Repo.
+</td>
+<td style="font-size: 30px; width: 15%;"><center>10%</center></td>
+</tr>
+</table>
 
 <h2 class="border">Links</h2>
-<div class="flex-container">
-  <div class="flex-child-left">
-    <b><a href="https://github.com/aelnar">GitHub Profile</a></b>
-  </div>
 
-  <div class="flex-child-middle">
-    Takes you to front page of my GitHub repos. <i>100g</i>
-  </div>
-
-  <div class="flex-child-right">
-    <b style="font-size: 30px">10%</b>
-  </div>
-</div>
-
+<table style="width: 100%;">
+<tr>
+<td style="font-size: 16px; width: 15%;"><b><a href="https://github.com/aelnar">GitHub Profile</a></b></td>
+<td style="width: 70%;">
+Takes you to front page of my GitHub repos.
+</td>
+<td style="font-size: 30px; width: 15%;"><center>10%</center></td>
+</tr>
+</table>
 <p class="divider"></p>
+<table style="width: 100%;">
+<tr>
+<td style="font-size: 16px; width: 15%;"><b><a href="https://www.linkedin.com/in/allyza-elnar-107702261/">LinkedIn</a></b></td>
+<td style="width: 70%;">
+Takes you to my LinkedIn profile.
+</td>
+<td style="font-size: 30px; width: 15%;"><center>10%</center></td>
+</tr>
+</table>
+<p class="divider"></p>
+<table style="width: 100%;">
+<tr>
+<td style="font-size: 16px; width: 15%;"><b><a href="https://github.com/aelnar10">Swift/SwiftUI Repos</a></b></td>
+<td style="width: 70%;">
+Takes you to Github repos with Swift and SwiftUI work on it.
+</td>
+<td style="font-size: 30px; width: 15%;"><center>10%</center></td>
+</tr>
+</table>
 
-<div class="flex-container">
-  <div class="flex-child-left">
-    <b><a href="https://www.linkedin.com/in/allyza-elnar-107702261/">LinkedIn</a></b>
-  </div>
-
-  <div class="flex-child-middle">
-    Takes you to my LinkedIn profile. <i>20g</i>
-  </div>
-
-  <div class="flex-child-right">
-    <b style="font-size: 30px">10%</b>
-  </div>
-</div>
 
 </body>
 </html>
